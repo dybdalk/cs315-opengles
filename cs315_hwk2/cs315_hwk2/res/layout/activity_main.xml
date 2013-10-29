@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <cs315.yourname.hwk2.MiniPaintView
+        android:id="@+id/paint_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="100" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Spinner
+            android:id="@+id/draw_mode_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Spinner
+            android:id="@+id/color_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/clear_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:onClick="clearButton"
+            android:text="@string/clear_button"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/file_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="fileButton"
+        android:text="@string/file_button"
+        android:textSize="14sp" />
+
+</LinearLayout>

@@ -1,0 +1,21 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+<view class="cs315.kdybdal.hwk4.GLDancingRobotActivity$GLBasicView"
+        android:id="@+id/gl_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="100"
+ />
+	<!-- Empty; specifying layout programmatically -->
+
+     <Button 
+         android:id="@+id/button1" 
+         android:layout_width="wrap_content" 
+         android:layout_height="wrap_content"
+         android:text="Start" />
+    
+</LinearLayout>
